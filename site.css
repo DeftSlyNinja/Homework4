@@ -3,3 +3,38 @@
     font-family: Helvetica, sans-serif;
     font-size: 150%;
 }
+
+#container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    border: 10px solid black;
+
+}
+
+#div1{
+    background-color: cornflowerblue;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border: 10px solid red;
+}
+
+#div2{
+    background-color: burlywood;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border: 10px solid red;
+}
+
+#div3{
+    background-color: greenyellow;
+    grid-row-start: 1;
+    grid-row-end: 7;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    border: 10px solid red;
+}

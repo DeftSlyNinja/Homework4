@@ -12,8 +12,6 @@ foodArray.push(new Food('Apple', 95));
 foodArray.push(new Food('Orange', 110));
 
 
-let output = document.getElementById("totalDisplay").innerHTML
-
 //fuction for populating array 
 function PopulateArray() {
     //collect the user inputs

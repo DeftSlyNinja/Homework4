@@ -16,12 +16,14 @@
             <input id="foodInput" type="text"><br>
             <label for="caloriesInput">Amount of Calories:</label>
             <input id="caloriesInput" type="text"><br>
-            <input id="subButton" type="button" value="Submit"><br>
-
+            <input id="subButton" onclick="PopulateArray()" type="button" value="Submit"><br>
+            <input id="listButton" onclick= "displayFoodInHTML()" type="button" value="List All"> <br> 
         </div>
 
         <div id="div2" class="class2">
             <h4 id="totalDisplay">Total Calories Displayed Here</h4>
+            <p id="Caloriesdisplay"></p>
+            <p id ="TotalCal"></p>
         </div>
 
         <div id="div3" class="class3">

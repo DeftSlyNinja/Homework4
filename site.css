@@ -1,44 +1,115 @@
  body {
-    margin: 50px;
-    font-family: Helvetica, sans-serif;
-    font-size: 150%;
-    background-color: darkgray;
+     margin: 50px;
+     font-family: Helvetica, sans-serif;
+     font-size: 150%;
+     background-color: darkgray;
+ }
+
+ h2 {
+     text-align: center;
+     text-decoration: underline;
+ }
+ 
+ h4{
+    text-decoration: underline;
+ }
+
+ .container1 {
+     display: grid;
+     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+     grid-gap: 30px;
+     background-color: gray;
+     border-radius: 10px;
+     border: 10px inset rgb(158, 158, 158);
+     padding: 30px;
+ }
+
+ .class1 {
+     background-color: rgb(141, 175, 109);
+     grid-row-start: 1;
+     grid-row-end: 4;
+     grid-column-start: 1;
+     grid-column-end: 4;
+     border: 10px inset rgb(151, 151, 151);;
+     border-radius: 10px;
+     text-align: center;
+ }
+
+ .class2 {
+     background-color: rgb(141, 175, 109);
+     grid-row-start: 4;
+     grid-row-end: 7;
+     grid-column-start: 1;
+     grid-column-end: 4;
+     border: 10px inset rgb(151, 151, 151);;
+     border-radius: 10px;
+     text-align: center;
+ }
+
+ .class3 {
+     background-color: rgb(141, 175, 109);
+     grid-row-start: 1;
+     grid-row-end: 7;
+     grid-column-start: 4;
+     grid-column-end: 7;
+     border: 10px inset rgb(151, 151, 151);;
+     border-radius: 10px;
+     text-align: center;
+ }
+
+ ul {
+     padding-left: 0;
+ }
+
+ ul li {
+     list-style-position: inside;
+ }
+
+ #subButton{
+    font-weight: bolder;
+    background-color: rgb(141, 175, 109);
+    width: 100px;
+    height: 50px;
+    border: 5px outset rgb(167, 202, 133);
+    border-radius: 10px;
+    margin: 10px;
+ }
+
+ #listButton{
+    font-weight: bolder;
+    background-color: rgb(141, 175, 109);
+    width: 100px;
+    height: 50px;
+    border: 5px outset rgb(167, 202, 133);
+    border-radius: 10px;
+    margin: 10px;
+ }
+
+ #foodInput{
+    border: 2px inset rgb(167, 202, 133);
+    border-radius: 3px;
+    background-color: rgb(167, 202, 133);
+ }
+
+ #caloriesInput{
+    border: 2px inset rgb(167, 202, 133);
+    border-radius: 3px;
+    background-color: rgb(167, 202, 133);
+ }
+
+#subButton:hover{
+    background-color: rgb(208, 238, 179);
 }
 
-.container1{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    background-color: cadetblue;
-    border: 10px solid black;
-    padding: 20px;
-
+#listButton:hover{
+    background-color: rgb(208, 238, 179);
 }
 
-.class1{
-    background-color: cornflowerblue;
-    grid-row-start: 1;
-    grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    border: 10px solid red;
+#subButton:active{
+    background-color: rgb(89, 107, 71);
 }
 
-.class2{
-    background-color: burlywood;
-    grid-row-start: 5;
-    grid-row-end: 7;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    border: 10px solid red;
+#listButton:active{
+    background-color: rgb(89, 107, 71);
 }
-
-.class3{
-    background-color: greenyellow;
-    grid-row-start: 1;
-    grid-row-end: 7;
-    grid-column-start: 5;
-    grid-column-end: 7;
-    border: 10px solid red;
-}
-

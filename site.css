@@ -1,9 +1,10 @@
  body {
     margin: 50px;
-    font-family: Helvetica, sans-serif;
+    font-family: sans-serif;
     font-size: 150%;
-    background-color: darkgray;
+    background-color:black;
 }
+
 
 .container1{
     display: grid;
@@ -15,14 +16,16 @@
 
 }
 
+
+
 .class1{
-    background-color: cornflowerblue;
     grid-row-start: 1;
     grid-row-end: 4;
     grid-column-start: 1;
     grid-column-end: 4;
-    border: 10px solid red;
+   
 }
+
 
 .class2{
     background-color: burlywood;
@@ -42,3 +45,10 @@
     border: 10px solid red;
 }
 
+.banner{
+    background-color:rgb(44, 42, 42);
+    
+}
+.appname{
+    color:white;
+}

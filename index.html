@@ -5,33 +5,52 @@
     <meta charset="utf-8">
     <title>Homework 4</title>
     <link rel="stylesheet" type="text/css" href="site.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
-    <h2>Homework 4</h2>
-    <section id="container" class="container1">
-        <div id="div1" class="class1">
+    <div class="banner text-center"> 
+        <h2 class="appname display-1 font-weight-bold">Homework 4: Calories Tracker</h2>
+    </div>
+    <section id="container1" class="container "> 
+        <form>
+            <div id="div1" class="class1" class="mb-3">
+                <label for="foodInput" class="form-lable">Food Name:</label>
+                <input id="foodInput" type="text" class="form-control"><br>
 
-            <label for="foodInput">Food Name:</label>
-            <input id="foodInput" type="text"><br>
-            <label for="caloriesInput">Amount of Calories:</label>
-            <input id="caloriesInput" type="text"><br>
-            <input id="subButton" onclick="PopulateArray()" type="button" value="Submit"><br>
-            <input id="listButton" onclick= "displayFoodInHTML()" type="button" value="List All"> <br> 
+                <label for="caloriesInput" class="form-lable">Amount of Calories:</label>
+                <input id="caloriesInput" type="text" class="form-control"><br>
+
+                <button id="subButton" onclick="PopulateArray()" type="button" class="btn btn-primary" >Submit </button>
+                <button id="listButton" onclick= "displayFoodInHTML()" type="button" class="btn btn-success">List All</button><br> 
+            </div>
+
+        </form>
+
+
+        
+        <div id="display" class="card  card mt-4">
+            <div class="card-header"> 
+                Counter
+            </div>
+            <div id="div2" class="card-body">
+                <h4 id="totalDisplay" class="card-header">Added Calories: </h4>
+                <p id="Caloriesdisplay" class="card-text mb-2"></p>
+                <p id ="TotalCal" class="card-text mb-2"></p>
+            </div>
         </div>
+        
 
-        <div id="div2" class="class2">
-            <h4 id="totalDisplay">Total Calories Displayed Here</h4>
-            <p id="Caloriesdisplay"></p>
-            <p id ="TotalCal"></p>
-        </div>
+        <div id="div3" class="card mt-4">
+            <div class=" card-body">
 
-        <div id="div3" class="class3">
-            <!-- Might make a section that shows all the food in the array -->
+            </div>
+            
         </div>
     </section>
 
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -69,11 +69,13 @@ function displayFoodInHTML() {
 
     // Create a new list element
     let listElement = document.createElement('ul');
+    listElement.classList.add('list-group'); //add in bootstrap 
 
     // Create list items for each Food object in the array
     foodArray.forEach(food => {
         let listItem = document.createElement('li');
-        listItem.textContent = `Food:${food.name} | Calories: ${food.calories}`;
+        listItem.textContent = `Food: ${food.name} | Calories: ${food.calories}`;
+        listItem.classList.add('list-group-item'); //add in bootstrap
         listElement.appendChild(listItem);
     });
 
